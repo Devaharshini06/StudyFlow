@@ -1,0 +1,28 @@
+.task-card { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 17px 16px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); animation: task-card-appear .24s ease both; }
+.task-card:nth-child(2) { animation-delay: .04s; }
+.task-card:nth-child(3) { animation-delay: .08s; }
+.task-card__main { min-width: 0; }
+.task-card__title-row { display: flex; align-items: center; gap: 9px; }
+.task-card__title-row h3 { margin: 0; overflow-wrap: anywhere; font-size: 14px; font-weight: 600; }
+.task-card__priority { flex: none; padding: 3px 7px; border-radius: 4px; font-size: 9px; font-weight: 700; text-transform: capitalize; }
+.task-card__priority--low { color: #477354; background: #e9f3e9; }
+.task-card__priority--medium { color: #9a6c2e; background: #f8f0df; }
+.task-card__priority--high { color: #a94e3c; background: #f9e9e4; }
+.task-card__course { margin: 6px 0 10px; color: #69756f; font-size: 12px; }
+.task-card__course span { padding: 0 4px; color: #b2bab5; }
+.task-card__meta { display: flex; align-items: center; gap: 13px; color: #8a948e; font-size: 10px; }
+.task-card__meta span:first-child { display: inline-flex; align-items: center; gap: 5px; }
+.task-card__actions { display: flex; flex: none; align-items: center; gap: 8px; }
+.task-card__complete { display: inline-flex; flex: none; align-items: center; gap: 6px; padding: 8px 10px; border: 1px solid #d4e5dc; border-radius: 5px; color: var(--green); background: #f5faf7; font-size: 11px; font-weight: 600; }
+.task-card__complete:hover:not(:disabled) { color: white; border-color: var(--green); background: var(--green); }
+.task-card__done { display: inline-flex; flex: none; align-items: center; gap: 5px; color: var(--green); font-size: 11px; font-weight: 600; }
+.task-card__delete { display: grid; width: 34px; height: 34px; flex: none; place-items: center; border: 1px solid #eadbd7; border-radius: 5px; color: #9e5142; background: #fff; }
+.task-card__delete:hover:not(:disabled) { border-color: #c98778; background: #fbf1ef; }
+.task-card--completed .task-card__title-row h3 { color: #66736d; }
+
+@keyframes task-card-appear { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 440px) {
+  .task-card { align-items: flex-start; flex-direction: column; gap: 13px; }
+  .task-card__actions { width: 100%; justify-content: flex-end; }
+}

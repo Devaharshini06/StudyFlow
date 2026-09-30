@@ -1,0 +1,18 @@
+.welcome-banner { display: flex; align-items: flex-end; justify-content: space-between; padding: 48px 0 35px; }
+.welcome-banner h1 { margin-bottom: 9px; font-family: 'Fraunces', Georgia, serif; font-size: clamp(34px, 4vw, 48px); line-height: 1.12; font-weight: 500; }
+.welcome-banner h1 span { color: var(--green); }
+.welcome-banner__copy { margin-bottom: 0; color: var(--muted); font-size: 15px; }
+.welcome-banner__date { display: grid; gap: 3px; padding-bottom: 4px; color: var(--muted); font-size: 12px; text-align: right; }
+.welcome-banner__day { color: var(--ink); font-size: 14px; font-weight: 600; }
+
+@media (max-width: 760px) {
+  .welcome-banner { align-items: flex-start; gap: 20px; padding-top: 36px; }
+  .welcome-banner__date { padding-top: 8px; }
+}
+
+@media (max-width: 440px) {
+  .welcome-banner { display: block; padding: 32px 0 23px; }
+  .welcome-banner h1 { max-width: 330px; font-size: 37px; }
+  .welcome-banner__copy { max-width: 290px; font-size: 13px; line-height: 1.55; }
+  .welcome-banner__date { display: none; }
+}

@@ -1,0 +1,4 @@
+.feedback-message { display: flex; justify-content: space-between; gap: 14px; margin-top: 13px; padding: 11px 12px; border-radius: 5px; font-size: 12px; line-height: 1.5; }
+.feedback-message--error { color: #923d31; background: #f9eae6; }
+.feedback-message--success { color: #28644c; background: #e8f3eb; }
+.feedback-message button { flex: none; padding: 0; border: 0; color: inherit; background: none; font-size: 11px; font-weight: 700; text-decoration: underline; }

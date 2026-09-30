@@ -1,0 +1,4 @@
+.empty-task-state { display: grid; justify-items: center; margin-top: 13px; padding: 48px 20px; border: 1px dashed #d9e1db; border-radius: 7px; background: rgb(255 255 255 / 50%); text-align: center; }
+.empty-task-state__icon { display: grid; width: 43px; height: 43px; place-items: center; margin-bottom: 13px; border-radius: 50%; color: var(--green); background: var(--green-pale); }
+.empty-task-state h3 { margin-bottom: 5px; font-family: 'Fraunces', Georgia, serif; font-size: 19px; font-weight: 500; }
+.empty-task-state p { max-width: 270px; margin-bottom: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }

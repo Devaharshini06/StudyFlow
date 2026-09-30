@@ -1,0 +1,15 @@
+.planner-app { width: min(1120px, calc(100% - 56px)); margin: 0 auto; }
+.planner-workspace { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(320px, .9fr); gap: 42px; padding: 43px 0 58px; }
+.planner-footer { display: flex; justify-content: space-between; padding: 17px 0 24px; border-top: 1px solid var(--line); color: #89938d; font-size: 10px; }
+
+@media (max-width: 760px) {
+  .planner-app { width: min(100% - 36px, 600px); }
+  .planner-workspace { grid-template-columns: 1fr; gap: 35px; padding-top: 32px; }
+}
+
+@media (max-width: 440px) {
+  .planner-app { width: calc(100% - 28px); }
+  .planner-workspace { gap: 29px; }
+  .planner-footer { gap: 14px; font-size: 9px; }
+  .planner-footer span:last-child { text-align: right; }
+}
